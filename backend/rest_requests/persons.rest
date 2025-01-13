@@ -1,0 +1,35 @@
+GET http://localhost:3001/api/persons
+
+###
+GET http://localhost:3001/api/persons/2
+
+###
+GET http://localhost:3001/api/persons/0
+
+###
+POST http://localhost:3001/api/persons
+Content-Type: application/json
+
+{
+    "name": "Mary Poppendieck",
+    "number": "39-23-6423122"
+}
+
+###
+POST http://localhost:3001/api/persons
+Content-Type: application/json
+
+{
+    "name": "David Letterman"
+}
+
+###
+POST http://localhost:3001/api/persons
+Content-Type: application/json
+
+{
+    "number": "040-23123124"
+}
+
+###
+DELETE http://localhost:3001/api/persons/4
